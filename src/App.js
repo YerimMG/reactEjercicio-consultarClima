@@ -15,7 +15,8 @@ function App() {
     if ( ciudad === '') return
     const consultarApi = async () => {
 
-      let key = process.env.key
+      let key = `ad9f9eeaabcdb8aa84ca067670193108`
+      console.log(key)
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${key}`
   
       const respuesta = await fetch(url)
